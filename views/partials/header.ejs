@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Capillary Challenge | Shaunak Sen</title>
+    <script src="https://use.fontawesome.com/b7f499e08c.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body ng-app="capillaryApp">
+
+<nav class="navbar navbar-inverse navbar-fixed-top custom-navbar" id="custom-navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand">Capillary Full Stack Challenge</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <div class="navbar-right" style="padding: 10px; width: 25%">
+                <div class="row">
+                    <% if(!currentUser){ %>
+                    <div class="col-xs-6 custom-button-login" data-toggle="modal" data-target="#login-modal">
+                        <i class="fa fa-sign-in"></i><span>Login</span>
+                    </div>
+                    <div class="col-xs-6 custom-button-register"  data-toggle="modal" data-target="#registration-modal">
+                        <i class="fa fa-envelope"></i><span>Register</span>
+                    </div>
+
+                    <% } else { %>
+                    <div class="col-xs-6 welcome-message">
+                        <p>Hello <%= currentUser.full_name %></p>
+                    </div>
+                    <div class="col-xs-6 custom-button-logout">
+                        <i class="fa fa-sign-in"></i><span><a href="/logout">Logout</a></span>
+                    </div>
+                    <% } %>
+
+
+                </div>
+            </div>
+        </div><!--/.navbar-collapse -->
+    </div>
+</nav>
+
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 header-left-box">
+                <h3>Capillary Game Viewer App</h3>
+                <hr>
+                <p>
+                    A web application which would let the users help list and browse
+                    games developed for different platforms conveniently
+                </p>
+                <hr>
+                <p>Get the <i class="fa fa-code"></i> at <i class="fa fa-github-alt"></i></p>
+            </div>
+            <div class="col-sm-4 col-sm-offset-3 header-right-box">
+                <blockquote>
+                    <p>Developed By</p>
+                    <p class="bold-text">Shaunak Sen</p>
+                    <hr>
+                    <p><i class="fa fa-phone"></i>&nbsp; 9830364704
+                        <br>
+                        <i class="fa fa-envelope"></i>shaunak1105@gmail.com</p>
+                    <p>Check out my projects at:</p>
+                    <hr>
+                    <p><i class="fa fa-github"></i><i class="fa fa-codepen"></i> <span class="emphasis-text">Read More</span></p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <% if (error && error.length > 0) { %>
+    <div class="alert alert-danger alert-dismissible" role="alert" >
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <%= error %>
+    </div>
+    <% } %>
+
+    <% if (success && success.length > 0) { %>
+    <div class="alert alert-success alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <%= success %>
+    </div>
+    <% } %>
+</div>

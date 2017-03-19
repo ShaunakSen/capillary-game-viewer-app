@@ -1,0 +1,183 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px; }
+
+a:link {
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+a:active {
+  text-decoration: none; }
+
+a {
+  color: inherit; }
+
+a:hover {
+  text-decoration: none;
+  color: inherit; }
+
+.welcome-message {
+  font-size: 1.1em;
+  margin-top: 2px; }
+
+.custom-button {
+  border: none;
+  border-radius: 0; }
+
+.btn-primary {
+  background-color: #d5cee1; }
+
+.btn-success {
+  background-color: #41ac42; }
+
+.bold-text {
+  font-weight: bold; }
+
+.custom-navbar {
+  background-color: rgba(0, 183, 255, 0);
+  border: none;
+  border-radius: 0;
+  color: #e9e2f5;
+  font-family: "Montserrat", sans-serif; }
+  .custom-navbar .navbar-brand {
+    color: #e9e2f5; }
+
+.custom-navbar.scrolled {
+  background-color: #4e4d4f; }
+
+.custom-button-login {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  color: #d5cee1;
+  cursor: pointer; }
+  .custom-button-login i {
+    color: #7bcb5d; }
+  .custom-button-login span {
+    margin-left: 3px;
+    border-bottom: 3px solid #7bcb5d; }
+
+.custom-button-register {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  color: #d5cee1;
+  cursor: pointer; }
+  .custom-button-register i {
+    color: #5660ff; }
+  .custom-button-register span {
+    margin-left: 3px;
+    border-bottom: 3px solid #5660ff; }
+
+.custom-button-logout {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  color: #d5cee1;
+  cursor: pointer; }
+  .custom-button-logout i {
+    color: #c06060; }
+  .custom-button-logout span {
+    margin-left: 3px;
+    border-bottom: 3px solid #c06060; }
+
+.jumbotron {
+  background: url("../img/header.jpg") center/cover no-repeat;
+  height: auto;
+  padding: 80px 40px; }
+  .jumbotron .header-left-box {
+    border: 3px solid #e9e2f5;
+    font-family: "Montserrat", sans-serif;
+    color: #d5cee1; }
+    .jumbotron .header-left-box i {
+      margin: 0 5px;
+      color: #5660ff; }
+  .jumbotron .header-right-box p {
+    color: #d5cee1; }
+    .jumbotron .header-right-box p i {
+      margin: 0 5px; }
+
+.games-details-header {
+  font-weight: bolder;
+  font-family: "Ubuntu", sans-serif;
+  color: #7bcb5d;
+  border-bottom: 3px solid #7bcb5d; }
+
+.games-details-card {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  border: 3px solid #7F2CCB; }
+  .games-details-card .emphasis-text {
+    color: #5660ff;
+    font-weight: bold; }
+  .games-details-card .title-header {
+    background-color: #7F2CCB;
+    color: #e9e2f5;
+    font-weight: bold;
+    padding: 10px 10px; }
+  .games-details-card .games-details {
+    padding: 10px 10px;
+    border-bottom: 1px solid #7F2CCB; }
+  .games-details-card .game-score {
+    padding: 10px 10px; }
+    .games-details-card .game-score .emphasis-text {
+      color: #7bcb5d; }
+    .games-details-card .game-score p {
+      color: #7bcb5d; }
+    .games-details-card .game-score .progress-bar {
+      background-color: #7bcb5d; }
+
+.pagination li a {
+  color: #5660ff;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  cursor: pointer; }
+
+.custom-modal {
+  border-radius: 0;
+  font-family: "Montserrat", sans-serif; }
+  .custom-modal .modal-header {
+    background-color: #7bcb5d; }
+    .custom-modal .modal-header h4 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px; }
+  .custom-modal .modal-body .row {
+    margin-top: 10px; }
+    .custom-modal .modal-body .row input {
+      border-radius: 0; }
+    .custom-modal .modal-body .row p {
+      color: #4e4d4f;
+      font-size: 17px;
+      margin-top: 4px; }
+
+#registration-modal .modal-header {
+  background-color: #5660ff; }
+#registration-modal .custom-input {
+  padding: 7px;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #5660ff;
+  transition: all 0.5s; }
+#registration-modal .custom-input:focus {
+  outline: none;
+  border: 2px solid #4e4d4f; }
+
+.emphasis-text {
+  text-decoration: underline; }
+
+.custom-input {
+  padding: 7px;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #7bcb5d;
+  transition: all 0.5s; }
+
+.custom-input:focus {
+  outline: none;
+  border: 2px solid #4e4d4f; }
+
+.custom-button-register-2 {
+  background-color: #5660ff; }
+
+/*# sourceMappingURL=styles.css.map */
